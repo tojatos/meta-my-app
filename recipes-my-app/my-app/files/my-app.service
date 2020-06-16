@@ -1,0 +1,11 @@
+[Unit]
+Description=My Python application
+
+[Service]
+Restart=on-failure
+User=root
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/my_python_app
+
+[Install]
+WantedBy=multi-user.target
